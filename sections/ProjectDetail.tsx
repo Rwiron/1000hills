@@ -3,13 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { PROJECTS, TEAM } from '../constants';
 import Button from '../components/Button';
 
-import heroConstruction from '../assets/images/hero/construction.png';
-import heroSolar from '../assets/images/hero/solar energy.png';
-import heroSurveillance from '../assets/images/hero/ITSURVIALNCE.png';
-import heroMEP from '../assets/images/hero/MP SUPERVISON.png';
-
-const galleryImages = [heroConstruction, heroSolar, heroSurveillance, heroMEP];
-
 interface ProjectDetailProps {
   id: string;
   onBack: () => void;

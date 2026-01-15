@@ -1,11 +1,6 @@
 
 import { Service, Project, TeamMember, Milestone } from './types';
 
-import heroConstruction from './assets/images/hero/construction.png';
-import heroSolar from './assets/images/hero/solar energy.png';
-import heroSurveillance from './assets/images/hero/ITSURVIALNCE.png';
-import heroMEP from './assets/images/hero/MP SUPERVISON.png';
-
 export const SERVICES: Service[] = [
   {
     id: 'mep',
@@ -61,7 +56,7 @@ export const PROJECTS: Project[] = [
     location: 'National Portfolio, Rwanda',
     category: 'MEP Systems',
     description: 'Comprehensive engineering engagement involving the modernization of critical facility infrastructure.',
-    imageUrl: heroMEP,
+    imageUrl: 'https://images.unsplash.com/photo-1590486803833-ffc96294a219?auto=format&fit=crop&q=80&w=2070',
     deliverables: [
       'Supply of Electrical Infrastructure',
       'Installation of Industrial Electrical Systems',
@@ -75,7 +70,7 @@ export const PROJECTS: Project[] = [
     location: 'Kigali, Rwanda',
     category: 'IT & Fiber',
     description: 'Deployment of high-speed digital infrastructure to support national security operations.',
-    imageUrl: heroSurveillance,
+    imageUrl: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80&w=2000',
     deliverables: [
       'Installation of Fiber Optic Network',
       'Supply of High-Capacity Connectivity Equipment',
@@ -89,7 +84,7 @@ export const PROJECTS: Project[] = [
     location: 'National Coverage',
     category: 'Construction & Security',
     description: 'A massive national rollout involving the construction and securing of community financial hubs.',
-    imageUrl: heroConstruction,
+    imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070',
     deliverables: [
       'Construction of 30+ SACCO Building Units',
       'Installation of Enterprise CCTV Surveillance',
@@ -103,7 +98,7 @@ export const PROJECTS: Project[] = [
     location: 'Rubavu, Rwanda',
     category: 'Industrial Electrical',
     description: 'Technical maintenance and material supply for the Lake Kivu gas-to-power operations.',
-    imageUrl: heroSolar,
+    imageUrl: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=2070',
     deliverables: [
       'Supply of Specialized Electrical Materials',
       'Maintenance of Mission-Critical IT Systems',
@@ -117,7 +112,7 @@ export const PROJECTS: Project[] = [
     location: 'Volcanoes National Park, Rwanda',
     category: 'Material Supply',
     description: 'Supplying the foundational materials for one of the world\'s most exclusive eco-luxury retreats.',
-    imageUrl: heroConstruction,
+    imageUrl: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=2070',
     deliverables: [
       'Supply of High-Grade Construction Materials',
       'Logistical Coordination in Eco-Sensitive Zones',
@@ -131,7 +126,7 @@ export const PROJECTS: Project[] = [
     location: 'Northern Province, Rwanda',
     category: 'Road Infrastructure',
     description: 'Participating in the development of a vital regional artery connecting Rwanda to the North.',
-    imageUrl: heroConstruction,
+    imageUrl: 'https://images.unsplash.com/photo-1545143333-636a661f184e?auto=format&fit=crop&q=80&w=2071',
     deliverables: [
       'Technical Material Supply for Road Construction',
       'Sub-Construction of Road Side Systems',
@@ -145,7 +140,7 @@ export const PROJECTS: Project[] = [
     location: 'Musanze, Rwanda',
     category: 'Civil Works',
     description: 'Enhancing the primary tourism corridor to the Volcanoes National Park.',
-    imageUrl: heroConstruction,
+    imageUrl: 'https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&q=80&w=2070',
     deliverables: [
       'Supply of Specialized Road Construction Materials',
       'Sub-Construction Technical Services',
@@ -159,7 +154,7 @@ export const PROJECTS: Project[] = [
     location: 'Dubai / Regional Partner',
     category: 'Solar & Renewable',
     description: 'International collaboration focusing on cutting-edge renewable energy integration.',
-    imageUrl: heroSolar,
+    imageUrl: 'https://images.unsplash.com/photo-1509391366360-fe5bb58583bb?auto=format&fit=crop&q=80&w=2070',
     deliverables: [
       'Solar Energy System Installation',
       'Supply of Specialized Solar Materials',
