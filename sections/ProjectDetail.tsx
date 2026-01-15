@@ -146,12 +146,12 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ id, onBack }) => {
         <div className="mt-32 reveal">
           <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-[#f69110] mb-12">Project Visual Records</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-             {[1, 2, 3].map((num) => (
-               <div key={num} className="aspect-square bg-black overflow-hidden group">
+             {(project.galleryImages || [project.imageUrl, project.imageUrl, project.imageUrl]).map((img, idx) => (
+               <div key={idx} className="aspect-square bg-black overflow-hidden group">
                   <img 
-                    src={`https://picsum.photos/seed/${project.id}-view-${num}/800/800`} 
+                    src={img} 
                     className="w-full h-full object-cover grayscale opacity-40 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" 
-                    alt={`Site view ${num}`} 
+                    alt={`${project.title} view ${idx + 1}`} 
                   />
                </div>
              ))}

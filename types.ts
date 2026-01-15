@@ -13,7 +13,8 @@ export interface Project {
   category: string;
   description: string;
   imageUrl: string;
-  deliverables?: string[]; // Added to hold specific project tasks
+  deliverables?: string[];
+  galleryImages?: string[];
 }
 
 export interface TeamMember {

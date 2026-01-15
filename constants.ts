@@ -1,6 +1,18 @@
 
 import { Service, Project, TeamMember, Milestone } from './types';
 
+import prisonImg from './assets/images/prison.jpg';
+import policeImg from './assets/images/police.jpeg';
+import aggrekoImg from './assets/images/Gas Methane Rubavu Aggreko.png';
+import gatunaRoadImg from './assets/images/kigali-gatuna_road.jpg';
+import jumeirahImg from './assets/images/JUMARA BEACH.jpg';
+import roadImg from './assets/images/roadimage.jpg';
+import containerImg from './assets/images/container.png';
+import batteryImg from './assets/images/battery backup.jpg';
+import backupSystemImg from './assets/images/backup system.png';
+import batteryStorageImg from './assets/images/battery storage system.png';
+import conatainerImg from './assets/images/conatainer.png';
+
 export const SERVICES: Service[] = [
   {
     id: 'mep',
@@ -56,13 +68,14 @@ export const PROJECTS: Project[] = [
     location: 'National Portfolio, Rwanda',
     category: 'MEP Systems',
     description: 'Comprehensive engineering engagement involving the modernization of critical facility infrastructure.',
-    imageUrl: 'https://images.unsplash.com/photo-1590486803833-ffc96294a219?auto=format&fit=crop&q=80&w=2070',
+    imageUrl: prisonImg,
     deliverables: [
       'Supply of Electrical Infrastructure',
       'Installation of Industrial Electrical Systems',
       'Plumbing & Water Management Installation',
       'System Supervision & Safety Testing'
-    ]
+    ],
+    galleryImages: [prisonImg, backupSystemImg, batteryStorageImg]
   },
   {
     id: 'rnp',
@@ -70,13 +83,14 @@ export const PROJECTS: Project[] = [
     location: 'Kigali, Rwanda',
     category: 'IT & Fiber',
     description: 'Deployment of high-speed digital infrastructure to support national security operations.',
-    imageUrl: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80&w=2000',
+    imageUrl: policeImg,
     deliverables: [
       'Installation of Fiber Optic Network',
       'Supply of High-Capacity Connectivity Equipment',
       'Network Infrastructure Mapping',
       'Operational Support & Handover'
-    ]
+    ],
+    galleryImages: [policeImg, backupSystemImg, containerImg]
   },
   {
     id: 'sacco',
@@ -84,13 +98,14 @@ export const PROJECTS: Project[] = [
     location: 'National Coverage',
     category: 'Construction & Security',
     description: 'A massive national rollout involving the construction and securing of community financial hubs.',
-    imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070',
+    imageUrl: containerImg,
     deliverables: [
       'Construction of 30+ SACCO Building Units',
       'Installation of Enterprise CCTV Surveillance',
       'Facility Security Systems Integration',
       'Civil Engineering & Finishing Works'
-    ]
+    ],
+    galleryImages: [containerImg, conatainerImg, backupSystemImg]
   },
   {
     id: 'aggreko',
@@ -98,13 +113,14 @@ export const PROJECTS: Project[] = [
     location: 'Rubavu, Rwanda',
     category: 'Industrial Electrical',
     description: 'Technical maintenance and material supply for the Lake Kivu gas-to-power operations.',
-    imageUrl: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=2070',
+    imageUrl: aggrekoImg,
     deliverables: [
       'Supply of Specialized Electrical Materials',
       'Maintenance of Mission-Critical IT Systems',
       'Industrial Hardware Sourcing',
       'Technical Lifecycle Support'
-    ]
+    ],
+    galleryImages: [aggrekoImg, batteryStorageImg, backupSystemImg]
   },
   {
     id: 'singita',
@@ -112,13 +128,14 @@ export const PROJECTS: Project[] = [
     location: 'Volcanoes National Park, Rwanda',
     category: 'Material Supply',
     description: 'Supplying the foundational materials for one of the world\'s most exclusive eco-luxury retreats.',
-    imageUrl: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=2070',
+    imageUrl: 'https://media.cntraveler.com/photos/5ea90362846f1f00085a176e/16:9/w_2560%2Cc_limit/Singita-Kwitonda-Lodge-Exterior-4.jpg',
     deliverables: [
       'Supply of High-Grade Construction Materials',
       'Logistical Coordination in Eco-Sensitive Zones',
       'Sourcing of Specialized Technical Components',
       'Supply Chain Management for Remote Sites'
-    ]
+    ],
+    galleryImages: [batteryImg, batteryStorageImg, backupSystemImg]
   },
   {
     id: 'gatuna',
@@ -126,13 +143,14 @@ export const PROJECTS: Project[] = [
     location: 'Northern Province, Rwanda',
     category: 'Road Infrastructure',
     description: 'Participating in the development of a vital regional artery connecting Rwanda to the North.',
-    imageUrl: 'https://images.unsplash.com/photo-1545143333-636a661f184e?auto=format&fit=crop&q=80&w=2071',
+    imageUrl: gatunaRoadImg,
     deliverables: [
       'Technical Material Supply for Road Construction',
       'Sub-Construction of Road Side Systems',
       'Electrical Infrastructure Installation',
       'Infrastructure Material Quality Testing'
-    ]
+    ],
+    galleryImages: [gatunaRoadImg, roadImg, containerImg]
   },
   {
     id: 'kinigi',
@@ -140,13 +158,14 @@ export const PROJECTS: Project[] = [
     location: 'Musanze, Rwanda',
     category: 'Civil Works',
     description: 'Enhancing the primary tourism corridor to the Volcanoes National Park.',
-    imageUrl: 'https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&q=80&w=2070',
+    imageUrl: roadImg,
     deliverables: [
       'Supply of Specialized Road Construction Materials',
       'Sub-Construction Technical Services',
       'Civil Engineering Material Sourcing',
       'Project Logistic Support'
-    ]
+    ],
+    galleryImages: [roadImg, gatunaRoadImg, containerImg]
   },
   {
     id: 'jumeirah',
@@ -154,13 +173,14 @@ export const PROJECTS: Project[] = [
     location: 'Dubai / Regional Partner',
     category: 'Solar & Renewable',
     description: 'International collaboration focusing on cutting-edge renewable energy integration.',
-    imageUrl: 'https://images.unsplash.com/photo-1509391366360-fe5bb58583bb?auto=format&fit=crop&q=80&w=2070',
+    imageUrl: jumeirahImg,
     deliverables: [
       'Solar Energy System Installation',
       'Supply of Specialized Solar Materials',
       'Renewable Energy Integration Design',
       'Hardware Procurement & Implementation'
-    ]
+    ],
+    galleryImages: [jumeirahImg, batteryStorageImg, backupSystemImg]
   }
 ];
 
